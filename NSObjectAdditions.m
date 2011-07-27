@@ -1,6 +1,5 @@
 //
 //  NSObjectAdditions.m
-//  MacHider
 //
 //  Created by Vera Tkachenko on 7/26/11.
 //  Copyright 2011 MacPaw. All rights reserved.
