@@ -12,8 +12,9 @@
 - (id)mutableObjectForKey:(NSString *)defaultName
 {
     id originalValue = [self objectForKey:defaultName];
-    id newArray = CFPropertyListCreateDeepCopy(kCFAllocatorDefault, (CFPropertyListRef)originalValue, kCFPropertyListMutableContainers);
-    return newArray;
+    id mutableValue = CFPropertyListCreateDeepCopy(kCFAllocatorDefault, (CFPropertyListRef)originalValue, kCFPropertyListMutableContainers);
+    [mutableValue autorelease];
+    return mutableValue;
 }
 
 @end
